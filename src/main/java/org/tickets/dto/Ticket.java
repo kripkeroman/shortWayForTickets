@@ -9,7 +9,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Ticket {
+public class Ticket
+{
     String origin;
     String destination;
     String carrier;

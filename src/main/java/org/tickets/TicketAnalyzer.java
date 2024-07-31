@@ -44,9 +44,11 @@ public class TicketAnalyzer
      * @return A JsonArray containing the ticket data.
      * @throws IOException If an error occurs while reading the file.
      */
-    private static JsonArray readJsonFile(String filePath) throws IOException {
+    private static JsonArray readJsonFile(String filePath) throws IOException
+    {
         InputStream inputStream = TicketAnalyzer.class.getClassLoader().getResourceAsStream(filePath);
-        if (inputStream == null) {
+        if (inputStream == null)
+        {
             throw new FileNotFoundException("File not found: " + filePath);
         }
         Reader reader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
