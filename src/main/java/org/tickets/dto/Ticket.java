@@ -1,4 +1,4 @@
-package org.crptApi.dto;
+package org.tickets.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -13,6 +13,6 @@ public class Ticket {
     String origin;
     String destination;
     String carrier;
-    int price;
+    Integer price;
     long flightDurationMinutes;
 }
